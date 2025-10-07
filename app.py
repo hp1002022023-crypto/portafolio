@@ -173,9 +173,9 @@ st.markdown("""
   </div>
 
   <div class="project">
-    <h4>Proyecto API #3</h4>
-    <p>Espacio para tu tercer proyecto API. Puedes agregar descripción e imágenes fácilmente.</p>
-    <a href="#">Ver proyecto</a>
+    <h4>Bolsa de Valores</h4>
+    <p>Consulta información bursátil en tiempo real, sigue el comportamiento de acciones y visualiza gráficos interactivos mediante una API financiera.</p>
+    <a href="https://bolsa-de-valores-db5pbjxa7z22iyjlegpmng.streamlit.app/">Ver proyecto</a>
   </div>
 </div>
 """, unsafe_allow_html=True)
