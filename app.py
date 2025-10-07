@@ -1,0 +1,197 @@
+import streamlit as st
+
+# CONFIGURACIÓN DE LA PÁGINA
+st.set_page_config(
+    page_title="Portafolio - Elmer & Luis",
+    page_icon="💻",
+    layout="wide"
+)
+
+st.markdown("""
+<style>
+body {
+    background-color: #0d1117;
+    color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+header, .block-container {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background-color: #0d1117;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav h1 {
+    font-size: 1.3rem;
+    color: #00d4ff;
+    margin: 0;
+}
+nav a {
+    color: #cfcfcf;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #00d4ff;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 8rem;
+}
+.hero-text {
+    flex: 1;
+}
+.hero-text h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+.hero-text p {
+    margin-top: 1rem;
+    color: #cfcfcf;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+.hero-buttons {
+    margin-top: 2rem;
+}
+.hero-buttons a {
+    background-color: #00d4ff;
+    color: #0d1117;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1rem;
+    transition: 0.3s;
+}
+.hero-buttons a:hover {
+    background-color: #00a3cc;
+}
+.hero-img img {
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.section {
+    padding: 5rem 8rem;
+}
+.section h3 {
+    color: #00d4ff;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+.project {
+    background-color: #161b22;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.project h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.project p {
+    color: #cfcfcf;
+    font-size: 0.95rem;
+}
+.project a {
+    display: inline-block;
+    margin-top: 0.8rem;
+    background-color: #00d4ff;
+    color: #0d1117;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.project a:hover {
+    background-color: #00a3cc;
+}
+footer {
+    background-color: #0d1117;
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #222;
+    color: #aaa;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<nav>
+  <h1>Portafolio </h1>
+  <div>
+    <a href="#inicio">Inicio</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+""", unsafe_allow_html=True)
+
+st.markdown(f"""
+<div class="hero" id="inicio">
+  <div class="hero-text">
+    <h2>Desarrolladores con aspiraciones en Sistemas Expertos</h2>
+    <p>Enfocados en crear soluciones tecnológicas modernas e intuitivas que faciliten la vida del usuario. Combinamos conocimiento en desarrollo de software y APIs para construir herramientas eficientes, inteligentes y orientadas al futuro.</p>
+    <div class="hero-buttons">
+      <a href="#proyectos">Ver proyectos</a>
+      <a href="#contacto">Contactar</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://cdn.pixabay.com/photo/2023/03/19/14/16/artificial-intelligence-7861610_1280.jpg" alt="Sistemas Expertos">
+  </div>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="section" id="proyectos">
+  <h3>🌐 Proyectos</h3>
+
+  <div class="project">
+    <h4>Aplicación del Clima</h4>
+    <p>Consulta el clima en tiempo real por departamento utilizando una API meteorológica.</p>
+    <a href="#">Ver proyecto</a>
+  </div>
+
+  <div class="project">
+    <h4>Música según tu Sentimiento</h4>
+    <p>Selecciona tu estado de ánimo y descubre canciones relacionadas mediante una API musical.</p>
+    <a href="#">Ver proyecto</a>
+  </div>
+
+  <div class="project">
+    <h4>Proyecto API #3</h4>
+    <p>Espacio para tu tercer proyecto API. Puedes agregar descripción e imágenes fácilmente.</p>
+    <a href="#">Ver proyecto</a>
+  </div>
+</div>
+""", unsafe_allow_html=True)
+
+# SECCIÓN CONTACTO
+st.markdown("""
+<div class="section" id="contacto">
+  <h3>📬 Contacto</h3>
+  <p>¿Quieres colaborar o conocer más? Escríbenos o visita nuestras redes:</p>
+  <p><strong>Correo:</strong> <a href="mailto:elmer@correo.com" style="color:#00d4ff;">elmer@correo.com</a></p>
+  <p><strong>GitHub:</strong> <a href="https://github.com" style="color:#00d4ff;">github.com</a></p>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<footer>
+  © 2025 Elmer Hernandez & Luis L   opez | Portafolio personal
+</footer>
+""", unsafe_allow_html=True)
