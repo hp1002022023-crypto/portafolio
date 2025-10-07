@@ -13,11 +13,23 @@ body {
     background-color: #0d1117;
     color: #f5f5f5;
     font-family: 'Poppins', sans-serif;
+
+    /* 🔹 Fondo con tu marca de agua */
+    background-image: url('imagenes/marca.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 500px;
+    opacity: 0.98;
 }
+
+/* 🔹 Eliminamos el espacio de padding */
 header, .block-container {
     padding-top: 0rem;
     padding-bottom: 0rem;
 }
+
+/* 🔹 Estilos de la barra de navegación */
 nav {
     display: flex;
     justify-content: space-between;
@@ -44,6 +56,8 @@ nav a {
 nav a:hover {
     color: #00d4ff;
 }
+
+/* 🔹 Sección principal */
 .hero {
     display: flex;
     align-items: center;
@@ -79,11 +93,13 @@ nav a:hover {
 .hero-buttons a:hover {
     background-color: #00a3cc;
 }
-.hero-img img {
-    width: 420px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+
+/* 🔹 Quitamos la imagen lateral */
+.hero-img {
+    display: none;
 }
+
+/* 🔹 Secciones */
 .section {
     padding: 5rem 8rem;
 }
@@ -119,6 +135,8 @@ nav a:hover {
 .project a:hover {
     background-color: #00a3cc;
 }
+
+/* 🔹 Footer */
 footer {
     background-color: #0d1117;
     text-align: center;
