@@ -7,68 +7,70 @@ st.set_page_config(
     layout="wide"
 )
 
-# 🔹 ESTILO CLARO AZUL PASTEL
+# 🔹 ESTILO CON FONDO CELESTE Y VERDE DEGRADADO
 st.markdown("""
 <style>
 body {
-    background: linear-gradient(to bottom right, #f4f9ff, #e8f0fe);
-    color: #1a237e;
+    background: linear-gradient(135deg, #a8edea, #fed6e3, #b9fbc0, #a0e7e5);
+    background-attachment: fixed;
+    color: #083d77;
     font-family: 'Poppins', sans-serif;
 }
 
-/* 🔹 Quitar márgenes */
+/* Quitar márgenes */
 header, .block-container {
     padding-top: 0rem;
     padding-bottom: 0rem;
 }
 
-/* 🔹 Barra de navegación clara */
+/* 🔹 Barra de navegación */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 3rem;
-    background-color: #bbdefb;
-    color: #0d47a1;
-    border-bottom: 2px solid #90caf9;
+    background: rgba(255, 255, 255, 0.8);
+    color: #083d77;
+    border-bottom: 2px solid #8ad0c1;
     position: sticky;
     top: 0;
     z-index: 999;
+    backdrop-filter: blur(10px);
 }
 nav h1 {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #0d47a1;
+    color: #045d56;
 }
 nav a {
-    color: #0d47a1;
+    color: #045d56;
     text-decoration: none;
     margin-left: 2rem;
     font-weight: 500;
     transition: 0.3s;
 }
 nav a:hover {
-    color: #1565c0;
+    color: #028090;
 }
 
-/* 🔹 Sección principal */
+/* 🔹 Hero principal */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 8rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 16px;
     margin: 3rem auto;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 .hero-text h2 {
     font-size: 2.5rem;
-    color: #0d47a1;
+    color: #045d56;
 }
 .hero-text p {
     margin-top: 1rem;
-    color: #1a237e;
+    color: #0b3954;
     font-size: 1.1rem;
     max-width: 600px;
 }
@@ -76,7 +78,7 @@ nav a:hover {
     margin-top: 2rem;
 }
 .hero-buttons a {
-    background-color: #42a5f5;
+    background-color: #00afb9;
     color: white;
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
@@ -86,7 +88,7 @@ nav a:hover {
     transition: 0.3s;
 }
 .hero-buttons a:hover {
-    background-color: #1e88e5;
+    background-color: #007f86;
 }
 
 /* 🔹 Secciones */
@@ -94,29 +96,29 @@ nav a:hover {
     padding: 4rem 8rem;
 }
 .section h3 {
-    color: #0d47a1;
+    color: #045d56;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
 }
 .project {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 .project h4 {
-    color: #0d47a1;
+    color: #045d56;
     margin-bottom: 0.5rem;
 }
 .project p {
-    color: #1a237e;
+    color: #0b3954;
     font-size: 0.95rem;
 }
 .project a {
     display: inline-block;
     margin-top: 0.8rem;
-    background-color: #42a5f5;
+    background-color: #00afb9;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -124,17 +126,18 @@ nav a:hover {
     text-decoration: none;
 }
 .project a:hover {
-    background-color: #1e88e5;
+    background-color: #007f86;
 }
 
-/* 🔹 Footer claro */
+/* 🔹 Footer */
 footer {
-    background-color: #bbdefb;
+    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 2rem;
-    color: #0d47a1;
+    color: #045d56;
     font-size: 0.9rem;
-    border-top: 3px solid #90caf9;
+    border-top: 3px solid #8ad0c1;
+    backdrop-filter: blur(10px);
 }
 </style>
 """, unsafe_allow_html=True)
@@ -156,7 +159,7 @@ st.markdown("""
 <div class="hero" id="inicio">
   <div class="hero-text">
     <h2>Portafolio de Elmer & Luis</h2>
-    <p>Explora nuestros proyectos y experiencias en el desarrollo de software, sistemas expertos y aplicaciones web. Nuestro objetivo es combinar tecnología y creatividad para ofrecer soluciones modernas y accesibles.</p>
+    <p>Explora nuestros proyectos y experiencias en el desarrollo de software, sistemas expertos y aplicaciones web. Buscamos unir tecnología, innovación y creatividad para mejorar el aprendizaje y la productividad.</p>
     <div class="hero-buttons">
       <a href="#proyectos">Ver proyectos</a>
       <a href="#contacto">Contacto</a>
@@ -168,7 +171,7 @@ st.markdown("""
 # 🔹 PROYECTOS
 st.markdown("""
 <div class="section" id="proyectos">
-  <h3>🌐 Proyectos</h3>
+  <h3>🌿 Proyectos</h3>
 
   <div class="project">
     <h4>Aplicación del Clima</h4>
@@ -195,14 +198,14 @@ st.markdown("""
 <div class="section" id="contacto">
   <h3>📬 Contacto</h3>
   <p>¿Quieres colaborar o conocer más? Escríbenos:</p>
-  <p><strong>Elmer:</strong> <a href="mailto:elmerhernandez@correo.com" style="color:#1e88e5;">elmerhernandez@correo.com</a></p>
-  <p><strong>Luis:</strong> <a href="mailto:luisLopez@correo.com" style="color:#1e88e5;">luisLopez@correo.com</a></p>
+  <p><strong>Elmer:</strong> <a href="mailto:elmerhernandez@correo.com" style="color:#007f86;">elmerhernandez@correo.com</a></p>
+  <p><strong>Luis:</strong> <a href="mailto:luisLopez@correo.com" style="color:#007f86;">luisLopez@correo.com</a></p>
 </div>
 """, unsafe_allow_html=True)
 
 # 🔹 FOOTER
 st.markdown("""
 <footer>
-  © 2025 Elmer Hernandez & Luis Lopez | Portafolio Digital
+  © 2025 Elmer Hernandez & Luis Lopez | Portafolio Educativo Digital
 </footer>
 """, unsafe_allow_html=True)
