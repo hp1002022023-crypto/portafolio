@@ -1,13 +1,12 @@
 import streamlit as st
 
-# 🔹 CONFIGURACIÓN DE LA PÁGINA
+# CONFIGURACIÓN DE LA PÁGINA
 st.set_page_config(
-    page_title="Portafolio - Elmer & Luis",
+    page_title="Portafolio APIs",
     page_icon="💻",
     layout="wide"
 )
 
-# 🔹 ESTILO CON FONDO CELESTE Y VERDE DEGRADADO
 st.markdown("""
 <style>
 body {
@@ -53,7 +52,7 @@ nav a:hover {
     color: #028090;
 }
 
-/* 🔹 Hero principal */
+/* Hero principal */
 .hero {
     display: flex;
     align-items: center;
@@ -91,7 +90,7 @@ nav a:hover {
     background-color: #007f86;
 }
 
-/* 🔹 Secciones */
+/* Secciones */
 .section {
     padding: 4rem 8rem;
 }
@@ -129,7 +128,7 @@ nav a:hover {
     background-color: #007f86;
 }
 
-/* 🔹 Footer */
+/* Footer */
 footer {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -142,7 +141,6 @@ footer {
 </style>
 """, unsafe_allow_html=True)
 
-# 🔹 NAVBAR
 st.markdown("""
 <nav>
   <h1>Portafolio Digital</h1>
@@ -154,7 +152,6 @@ st.markdown("""
 </nav>
 """, unsafe_allow_html=True)
 
-# 🔹 HERO
 st.markdown("""
 <div class="hero" id="inicio">
   <div class="hero-text">
@@ -168,7 +165,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# 🔹 PROYECTOS
+# PROYECTOS
 st.markdown("""
 <div class="section" id="proyectos">
   <h3>🌿 Proyectos</h3>
@@ -193,17 +190,17 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# 🔹 CONTACTO
+# CONTACTO
 st.markdown("""
 <div class="section" id="contacto">
   <h3>📬 Contacto</h3>
   <p>¿Quieres colaborar o conocer más? Escríbenos:</p>
-  <p><strong>Elmer:</strong> <a href="mailto:elmerhernandez@correo.com" style="color:#007f86;">elmerhernandez@correo.com</a></p>
-  <p><strong>Luis:</strong> <a href="mailto:luisLopez@correo.com" style="color:#007f86;">luisLopez@correo.com</a></p>
+  <p><strong>Elmer:</strong> <a href="mailto:elmerhernandez@gmail.com" style="color:#007f86;">elmerhernandez@gmail.com</a></p>
+  <p><strong>Luis:</strong> <a href="mailto:luisLopez@gmail.com" style="color:#007f86;">luisLopez@gmail.com</a></p>
 </div>
 """, unsafe_allow_html=True)
 
-# 🔹 FOOTER
+# FOOTER
 st.markdown("""
 <footer>
   © 2025 Elmer Hernandez & Luis Lopez | Portafolio Educativo Digital
