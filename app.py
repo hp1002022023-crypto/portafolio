@@ -163,7 +163,7 @@ st.markdown("""
   <div class="project">
     <h4>Aplicación del Clima</h4>
     <p>Consulta el clima en tiempo real por departamento utilizando una API meteorológica.</p>
-    <a href="#">Ver proyecto</a>
+    <a href="https://r76cmuruexwpv3rmkmnmrc.streamlit.app/">Ver proyecto</a>
   </div>
 
   <div class="project">
