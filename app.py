@@ -169,7 +169,7 @@ st.markdown("""
   <div class="project">
     <h4>Música según tu Sentimiento</h4>
     <p>Selecciona tu estado de ánimo y descubre canciones relacionadas mediante una API musical.</p>
-    <a href="#">Ver proyecto</a>
+    <a href="https://app-musica-bxue6qn7avgh2ykdxgbtrq.streamlit.app/">Ver proyecto</a>
   </div>
 
   <div class="project">
