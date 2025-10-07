@@ -185,8 +185,8 @@ st.markdown("""
 <div class="section" id="contacto">
   <h3>📬 Contacto</h3>
   <p>¿Quieres colaborar o conocer más? Escríbenos o visita nuestras redes:</p>
-  <p><strong>Correo:</strong> <a href="mailto:elmer@correo.com" style="color:#00d4ff;">elmer@correo.com</a></p>
-  <p><strong>GitHub:</strong> <a href="https://github.com" style="color:#00d4ff;">github.com</a></p>
+  <p><strong>Correo:</strong> <a href="mailto:elmerhernandez@correo.com" style="color:#00d4ff;">elmerhernandez@correo.com</a></p>
+  <p><strong>Correo:</strong> <a href="mailto:luisLopez@correo.com" style="color:#00d4ff;">luisLopez@correo.com</a></p>
 </div>
 """, unsafe_allow_html=True)
 
