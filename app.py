@@ -7,58 +7,47 @@ st.set_page_config(
     layout="wide"
 )
 
-# 🔹 CSS CON FONDO DESDE GITHUB RAW
+# 🔹 ESTILOS CON FONDO PASTEL
 st.markdown("""
 <style>
 body {
-    background-color: #0d1117;
-    color: #f5f5f5;
+    background-color: #e6f2ff;  /* Fondo pastel azul suave */
+    color: #1e1e1e;
     font-family: 'Poppins', sans-serif;
-
-    /* 🔹 Fondo con marca de agua desde GitHub */
-    background-image: url('https://raw.githubusercontent.com/hp1002022023-crypto/portafolio/main/imagenes/sistemas-expertos-2.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 500px;
-    opacity: 0.98;
 }
 
-/* 🔹 Eliminamos el espacio de padding */
 header, .block-container {
     padding-top: 0rem;
     padding-bottom: 0rem;
 }
 
-/* 🔹 Estilos de la barra de navegación */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 3rem;
-    background-color: #0d1117;
-    border-bottom: 1px solid #222;
+    background-color: #d6eaff;
+    border-bottom: 2px solid #b3d1ff;
     position: sticky;
     top: 0;
     z-index: 999;
 }
 nav h1 {
     font-size: 1.3rem;
-    color: #00d4ff;
+    color: #005f99;
     margin: 0;
 }
 nav a {
-    color: #cfcfcf;
+    color: #004466;
     text-decoration: none;
     margin-left: 2rem;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 nav a:hover {
-    color: #00d4ff;
+    color: #0099cc;
 }
 
-/* 🔹 Sección principal */
 .hero {
     display: flex;
     align-items: center;
@@ -70,11 +59,11 @@ nav a:hover {
 }
 .hero-text h2 {
     font-size: 2.5rem;
-    color: white;
+    color: #00334d;
 }
 .hero-text p {
     margin-top: 1rem;
-    color: #cfcfcf;
+    color: #333;
     font-size: 1.2rem;
     max-width: 600px;
 }
@@ -82,8 +71,8 @@ nav a:hover {
     margin-top: 2rem;
 }
 .hero-buttons a {
-    background-color: #00d4ff;
-    color: #0d1117;
+    background-color: #0099cc;
+    color: white;
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
@@ -92,63 +81,57 @@ nav a:hover {
     transition: 0.3s;
 }
 .hero-buttons a:hover {
-    background-color: #00a3cc;
+    background-color: #0077aa;
 }
 
-/* 🔹 Quitamos la imagen lateral */
-.hero-img {
-    display: none;
-}
-
-/* 🔹 Secciones */
 .section {
     padding: 5rem 8rem;
 }
 .section h3 {
-    color: #00d4ff;
+    color: #005f99;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
 }
 .project {
-    background-color: #161b22;
+    background-color: #f0f8ff;
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 .project h4 {
-    color: white;
+    color: #00334d;
     margin-bottom: 0.5rem;
 }
 .project p {
-    color: #cfcfcf;
+    color: #333;
     font-size: 0.95rem;
 }
 .project a {
     display: inline-block;
     margin-top: 0.8rem;
-    background-color: #00d4ff;
-    color: #0d1117;
+    background-color: #0099cc;
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 6px;
     font-weight: 600;
     text-decoration: none;
 }
 .project a:hover {
-    background-color: #00a3cc;
+    background-color: #0077aa;
 }
 
-/* 🔹 Footer */
 footer {
-    background-color: #0d1117;
+    background-color: #d6eaff;
     text-align: center;
     padding: 2rem;
-    border-top: 1px solid #222;
-    color: #aaa;
+    border-top: 2px solid #b3d1ff;
+    color: #004466;
 }
 </style>
 """, unsafe_allow_html=True)
 
-# 🔹 Navegación superior
+# 🔹 NAVEGACIÓN
 st.markdown("""
 <nav>
   <h1>Portafolio</h1>
@@ -160,7 +143,7 @@ st.markdown("""
 </nav>
 """, unsafe_allow_html=True)
 
-# 🔹 Sección Hero
+# 🔹 SECCIÓN HERO
 st.markdown("""
 <div class="hero" id="inicio">
   <div class="hero-text">
@@ -171,13 +154,10 @@ st.markdown("""
       <a href="#contacto">Contactar</a>
     </div>
   </div>
-  <div class="hero-img">
-    <img src="https://cdn.pixabay.com/photo/2023/03/19/14/16/artificial-intelligence-7861610_1280.jpg" alt="Sistemas Expertos">
-  </div>
 </div>
 """, unsafe_allow_html=True)
 
-# 🔹 Proyectos
+# 🔹 SECCIÓN PROYECTOS
 st.markdown("""
 <div class="section" id="proyectos">
   <h3>🌐 Proyectos</h3>
@@ -202,17 +182,17 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# 🔹 Contacto
+# 🔹 SECCIÓN CONTACTO
 st.markdown("""
 <div class="section" id="contacto">
   <h3>📬 Contacto</h3>
   <p>¿Quieres colaborar o conocer más? Escríbenos o visita nuestras redes:</p>
-  <p><strong>Correo:</strong> <a href="mailto:elmerhernandez@correo.com" style="color:#00d4ff;">elmerhernandez@correo.com</a></p>
-  <p><strong>Correo:</strong> <a href="mailto:luisLopez@correo.com" style="color:#00d4ff;">luisLopez@correo.com</a></p>
+  <p><strong>Correo:</strong> <a href="mailto:elmerhernandez@correo.com" style="color:#0099cc;">elmerhernandez@correo.com</a></p>
+  <p><strong>Correo:</strong> <a href="mailto:luisLopez@correo.com" style="color:#0099cc;">luisLopez@correo.com</a></p>
 </div>
 """, unsafe_allow_html=True)
 
-# 🔹 Footer
+# 🔹 FOOTER
 st.markdown("""
 <footer>
   © 2025 Elmer Hernandez & Luis Lopez | Portafolio personal
