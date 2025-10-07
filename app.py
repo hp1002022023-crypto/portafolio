@@ -155,8 +155,8 @@ st.markdown("""
 st.markdown("""
 <div class="hero" id="inicio">
   <div class="hero-text">
-    <h2>Portafolio de Elmer & Luis</h2>
-    <p>Explora nuestros proyectos y experiencias en el desarrollo de software, sistemas expertos y aplicaciones web. Buscamos unir tecnología, innovación y creatividad para mejorar el aprendizaje y la productividad.</p>
+    <h2>Explora nuestros proyectos y experiencias en el desarrollo de software</h2>
+    <p>Sistemas expertos y aplicaciones web. Buscamos unir tecnología, innovación y creatividad para mejorar el aprendizaje y la productividad.</p>
     <div class="hero-buttons">
       <a href="#proyectos">Ver proyectos</a>
       <a href="#contacto">Contacto</a>
