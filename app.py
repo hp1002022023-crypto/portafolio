@@ -15,7 +15,7 @@ body {
     font-family: 'Poppins', sans-serif;
 
     /* 🔹 Fondo con tu marca de agua */
-    background-image: url('sistemas-expertos-2.png');
+    background-image: url('2d024abe-022c-47f5-a695-59d618e69b9c.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
