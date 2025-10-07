@@ -15,7 +15,7 @@ body {
     font-family: 'Poppins', sans-serif;
 
     /* 🔹 Fondo con tu marca de agua */
-    background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=VF0EGY9h&id=F4A9013D17D64D3C95E2F57BCAB4A451BB74064E&thid=OIP.VF0EGY9hzQJ2hLf9DqapGgHaDx&mediaurl=https%3A%2F%2Fwww.santanderopenacademy.com%2Fes%2Fblog%2Fsistemas-expertos%2F_jcr_content%2Froot%2Fcontainer%2Fresponsivegrid%2Fimage_1421827964.coreimg.jpeg%2F1692867027878%2Fsistemas-expertos-2.jpeg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.545d04198f61cd027684b7fd0ea6a91a%3Frik%3DTgZ0u1GktMp79Q%26pid%3DImgRaw%26r%3D0&exph=732&expw=1434&q=foto+de+sistemas+expertos&form=IRPRST&ck=4AD70D695F0FDBE392865D755362DDD0&selectedindex=3&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11');
+    background-image: url('sistemas-expertos-2.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
